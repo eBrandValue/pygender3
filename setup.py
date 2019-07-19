@@ -1,23 +1,23 @@
 from setuptools import setup, Extension, find_packages
 
 module=Extension(
-    'pygender',
-    sources = ['pygender.c'],
+    'pygender3',
+    sources=['pygender3.c'],
 )
 
 setup(
-    name='pygender',
-    version='0.0.6',
-    description = 'Python wrapper for gender.c',
-    author = 'Irmak Cakmak',
-    author_email = 'irmak@fastmail.com',
-    url = 'https://github.com/irmakcakmak/pygender',
-    license = 'LGPL',
-    packages = find_packages(),
+    name='pygender3',
+    version='0.0.7',
+    description='Python3 wrapper for gender.c',
+    author='eBrandValue',
+    author_email='hostmaster@ebrandvalue.com',
+    url='https://github.com/eBrandValue/pygender3',
+    license='LGPL',
+    packages=find_packages(),
     package_data={
-        'pygender': ['nam_dict.txt'],
+        'pygender3': ['nam_dict.txt'],
     },
-    include_package_data = True,
+    include_package_data=True,
     data_files=[
        ('/var/lib/gender', ['nam_dict.txt'])
     ],
